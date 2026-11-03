@@ -1,0 +1,261 @@
+
+/* ==============================
+   General Settings
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #243447;
+}
+
+
+/* ==============================
+   Main Header
+============================== */
+
+.main-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 12px rgba(18, 59, 93, 0.10);
+}
+
+
+/* ==============================
+   Navbar
+============================== */
+
+.main-header .navbar {
+    padding:  0;
+    background-color: #FFFFFF;
+}
+
+.main-header .container {
+    max-width: 1320px;
+	align-items: center;
+}
+
+
+/* ==============================
+   Clinic Logo
+============================== */
+
+.clinic-logo {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.clinic-logo-img {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ==============================
+   Navigation Menu
+============================== */
+
+.main-header .navbar-nav {
+    gap: 8px;
+}
+
+.main-header .nav-link {
+    color: #243447;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 10px !important;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.main-header .nav-link:hover,
+.main-header .nav-link.active {
+    color: #1976D2;
+}
+
+
+/* ==============================
+   Admin Login
+============================== */
+
+.admin-nav-item {
+    margin-left: 8px;
+}
+
+.admin-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 14px;
+    color: #1976D2;
+    border: 1px solid #1976D2;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.admin-login:hover {
+    color: #FFFFFF;
+    background-color: #1976D2;
+}
+
+
+/* ==============================
+   Book Appointment Button
+============================== */
+
+.appointment-nav-item {
+    margin-left: 5px;
+}
+
+.btn-appointment {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 16px;
+    background-color: #1976D2;
+    color: #FFFFFF;
+    border: 1px solid #1976D2;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn-appointment:hover {
+    background-color: #123B5D;
+    border-color: #123B5D;
+    color: #FFFFFF;
+}
+
+.btn-appointment i {
+    font-size: 12px;
+}
+
+
+/* ==============================
+   Mobile Menu Button
+============================== */
+
+.main-header .navbar-toggler {
+    border: 1px solid #D7E5F3;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.main-header .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+}
+
+
+/* ==============================
+   Responsive Design
+============================== */
+
+@media (max-width: 1199px) {
+
+    .clinic-logo-img {
+        width: 155px;
+        height: 60px;
+    }
+
+    .main-header .navbar-nav {
+        gap: 2px;
+    }
+
+    .main-header .nav-link {
+        font-size: 14px;
+        padding: 10px 7px !important;
+    }
+
+    .admin-login {
+        font-size: 14px;
+        padding: 9px 10px;
+    }
+
+    .btn-appointment {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    .main-header .navbar {
+        padding: 10px 0;
+    }
+
+    .clinic-logo-img {
+        width: 165px;
+        height: 60px;
+    }
+
+    .main-header .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    .main-header .navbar-nav {
+        align-items: stretch !important;
+        gap: 4px;
+    }
+
+    .main-header .nav-link {
+        font-size: 16px;
+        padding: 10px 12px !important;
+    }
+
+    .admin-nav-item,
+    .appointment-nav-item {
+        margin: 5px 0;
+    }
+
+    .admin-login,
+    .btn-appointment {
+        display: flex;
+        width: fit-content;
+        padding: 11px 15px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .clinic-logo-img {
+        width: 145px;
+        height: 55px;
+    }
+
+    .main-header .navbar-toggler {
+        padding: 6px 8px;
+    }
+}
+
+
+
+
+
+
+
+
